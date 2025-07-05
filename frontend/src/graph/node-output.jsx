@@ -1,6 +1,7 @@
 import React from "react";
 import { Badge, Accordion } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
+import { Remark } from "react-remark";
 
 export const NodeOutput = ({ output }) => {
     const outputs = [];
@@ -16,7 +17,9 @@ export const NodeOutput = ({ output }) => {
                         </div>
                     </div>
                 </Accordion.Header>
-                <Accordion.Body>{out.description}</Accordion.Body>
+                <Accordion.Body>
+                    <Remark>{out.description}</Remark>
+                </Accordion.Body>
             </Accordion.Item>
         );
     });

@@ -13,7 +13,14 @@
                     tags: [],
                     filePath: "",
                     importCmd: "",
-                    output: [],
+                    output: [
+                        {
+                            column: "product_code",
+                            type: "String",
+                            description:
+                                "Can be one of the following Codes:\n* ELEC001\n   * Electronics\n   * Devices like phones, laptops, and TVs.\n\n* FURN002\n   * Furniture\n   * Items such as chairs, tables, and sofas.\n\n* CLOTH003\n   * Clothing \n   * Apparel, including shirts, pants, and jackets.\n",
+                        },
+                    ],
                     predecessors: [
                         "__main___function_t1_input_t1_input",
                         "__main___function_t2_input_cache_t2_input_cache",
